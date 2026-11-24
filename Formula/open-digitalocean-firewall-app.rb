@@ -5,20 +5,20 @@
 class OpenDigitaloceanFirewallApp < Formula
   desc "System tray app to manage your IP in DigitalOcean managed database firewalls"
   homepage "https://github.com/konhi/open-digitalocean-firewall-app"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/konhi/open-digitalocean-firewall-app/releases/download/v0.1.0/open-digitalocean-firewall-app_0.1.0_darwin_amd64.tar.gz"
-      sha256 "5a0002aab1f7a3888c2331aadfdd0ae3724c7d612267b87d251b0e3c326c332f"
+      url "https://github.com/konhi/open-digitalocean-firewall-app/releases/download/v0.2.0/open-digitalocean-firewall-app_0.2.0_darwin_amd64.tar.gz"
+      sha256 "f90e79234f42c1b68db484f8ba5a989f12f89d326e0040f849249ef9dd0ca4b0"
 
       define_method(:install) do
         bin.install "open-digitalocean-firewall-app"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/konhi/open-digitalocean-firewall-app/releases/download/v0.1.0/open-digitalocean-firewall-app_0.1.0_darwin_arm64.tar.gz"
-      sha256 "9edfcef57b103ef3d9333b330a6e83474b7d9b29235dd264c4e69227f87655bd"
+      url "https://github.com/konhi/open-digitalocean-firewall-app/releases/download/v0.2.0/open-digitalocean-firewall-app_0.2.0_darwin_arm64.tar.gz"
+      sha256 "f70fa98b968bd7b8bbdf48efe441076b857db4528657b0fe7e873555f8cedcf4"
 
       define_method(:install) do
         bin.install "open-digitalocean-firewall-app"
@@ -28,15 +28,15 @@ class OpenDigitaloceanFirewallApp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/konhi/open-digitalocean-firewall-app/releases/download/v0.1.0/open-digitalocean-firewall-app_0.1.0_linux_amd64.tar.gz"
-      sha256 "07bac268ba8b1d74209dbf6dde9d0d07136d27908a4814805fd58aee25902b76"
+      url "https://github.com/konhi/open-digitalocean-firewall-app/releases/download/v0.2.0/open-digitalocean-firewall-app_0.2.0_linux_amd64.tar.gz"
+      sha256 "be0a4f57425a48e2abf5dca48c98ceb40d38bf822eaaddc382966a1106fdee4b"
       define_method(:install) do
         bin.install "open-digitalocean-firewall-app"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/konhi/open-digitalocean-firewall-app/releases/download/v0.1.0/open-digitalocean-firewall-app_0.1.0_linux_arm64.tar.gz"
-      sha256 "79e95e968be14e6f0f4516fbae399691bcbb074b4f2ec4ce2cfd098b3d1aa247"
+      url "https://github.com/konhi/open-digitalocean-firewall-app/releases/download/v0.2.0/open-digitalocean-firewall-app_0.2.0_linux_arm64.tar.gz"
+      sha256 "724e532d4156b8db954b2b600b28978b78e8d69fda05e95aa1b94ee14f2d3751"
       define_method(:install) do
         bin.install "open-digitalocean-firewall-app"
       end
